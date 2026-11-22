@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>赖铭浩 Minghao Lai | Homepage</title>
+  <meta name="description" content="Minghao Lai (赖铭浩) — Ph.D. student at Institute of Automation, Chinese Academy of Sciences. Computer Vision, Multimodal Learning, Diffusion Models." />
+  <meta property="og:title" content="赖铭浩 Minghao Lai" />
+  <meta property="og:description" content="Ph.D. student @ CASIA · Computer Vision · Multimodal · Diffusion" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%2322d3ee'/><stop offset='1' stop-color='%23a855f7'/></linearGradient></defs><rect width='100' height='100' rx='24' fill='url(%23g)'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'>L</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="bg"></canvas>
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#about" class="logo"><span class="logo-mark">L</span><span class="zh">赖铭浩</span><span class="en">Minghao Lai</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about"><span class="zh">关于</span><span class="en">About</span></a>
+        <a href="#news"><span class="zh">动态</span><span class="en">News</span></a>
+        <a href="#publications"><span class="zh">论文</span><span class="en">Publications</span></a>
+        <a href="#education"><span class="zh">经历</span><span class="en">Experience</span></a>
+        <a href="#honors"><span class="zh">荣誉</span><span class="en">Honors</span></a>
+        <a href="cv.html" class="nav-cv"><span class="zh">简历</span><span class="en">CV</span></a>
+      </nav>
+      <div class="nav-actions">
+        <button class="lang-btn" id="langBtn" aria-label="Switch language">
+          <span class="lang-opt" data-l="zh">中</span><span class="lang-sep">/</span><span class="lang-opt" data-l="en">EN</span>
+        </button>
+        <button class="menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ INTRO: text (left) + photo (right) ============ -->
+    <section id="about" class="section intro">
+      <div class="intro-grid">
+        <div class="about-main reveal">
+          <p class="hero-hello"><span class="zh">// 关于我</span><span class="en">// About Me</span></p>
+          <h1 class="hero-name">
+            <span class="zh">赖铭浩</span><span class="en">Minghao Lai</span>
+            <small class="zh">Minghao Lai</small><small class="en">赖铭浩</small>
+          </h1>
+          <p class="hero-role">
+            <span class="zh">博士研究生 · 中国科学院自动化研究所</span>
+            <span class="en">Ph.D. Student · Institute of Automation, Chinese Academy of Sciences</span>
+          </p>
+          <div class="about-text">
+          <p class="zh">
+            我目前是<b>中国科学院自动化研究所</b>模式识别与智能系统专业的博士研究生，联合培养单位为<b>北京中关村学院 × 中关村人工智能研究院</b>。研究兴趣包括<b>计算机视觉、多模态大模型与 Diffusion 模型</b>，同时关注具身智能中的视觉表征学习。
+          </p>
+          <p class="zh">
+            本科毕业于<b>深圳大学</b>自动化专业，获优秀毕业生与荣誉学士学位。曾在香港科技大学（广州）、深圳北理莫斯科大学人工智能研究院等机构从事科研实习，相关工作发表于 <b>CVPR 2026</b> 与 <b>ICCV 2025</b>。
+          </p>
+          <p class="en">
+            I am a Ph.D. student majoring in Pattern Recognition and Intelligent Systems at the <b>Institute of Automation, Chinese Academy of Sciences (CASIA)</b>, jointly trained with <b>Zhongguancun Academy × Zhongguancun Institute of Artificial Intelligence</b>. My research interests include <b>computer vision, multimodal large models and diffusion models</b>, as well as visual representation learning for embodied AI.
+          </p>
+          <p class="en">
+            I received my B.Eng. in Automation from <b>Shenzhen University</b>, graduating as an Outstanding Graduate with an Honors Degree. I have done research internships at HKUST (Guangzhou) and the AI Institute of Shenzhen MSU-BIT University, with work published at <b>CVPR 2026</b> and <b>ICCV 2025</b>.
+          </p>
+          </div>
+          <div class="tags">
+            <span class="tag"><span class="zh">计算机视觉</span><span class="en">Computer Vision</span></span>
+            <span class="tag"><span class="zh">多模态大模型</span><span class="en">Multimodal LLMs</span></span>
+            <span class="tag">Diffusion</span>
+            <span class="tag"><span class="zh">具身智能</span><span class="en">Embodied AI</span></span>
+          </div>
+          <div class="hero-btns">
+            <a class="btn btn-primary" href="mailto:minghaolai77@gmail.com">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v.5l8 5 8-5V6H4zm16 2.85-8 5-8-5V18h16V8.85z"/></svg>
+              Email
+            </a>
+            <a class="btn btn-ghost" href="cv.html">
+              <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 12h8v2H8v-2zm0 4h8v2H8v-2z"/></svg>
+              <span class="zh">简历</span><span class="en">CV</span>
+            </a>
+            <a class="btn btn-ghost" href="https://scholar.google.com.hk/citations?user=FhDBnOwAAAAJ&hl=zh-CN" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3zm-6.18 9.9v3.6L12 20l6.18-3.5v-3.6L12 16.27 5.82 12.9z"/></svg>
+              Google Scholar
+            </a>
+          </div>
+        </div>
+
+        <div class="photo reveal">
+          <div class="photo-frame">
+            <!-- 照片：把你的照片命名为 avatar.jpg 放进 images 文件夹即可自动显示（建议竖版 4:5） -->
+            <img src="images/avatar.jpg" alt="Minghao Lai" id="avatarImg" />
+            <div class="avatar-placeholder" id="avatarPh">
+              <span class="ph-char">赖</span>
+              <span class="ph-tip"><span class="zh">照片位置</span><span class="en">Photo here</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NEWS ============ -->
+    <section id="news" class="section">
+      <h2 class="section-title reveal"><span class="idx">01</span><span class="zh">最新动态</span><span class="en">News</span></h2>
+      <ul class="news card reveal">
+        <li><span class="date">2026.09</span><span class="zh">🎓 进入中国科学院自动化研究所攻读博士学位。</span><span class="en">🎓 Started my Ph.D. at the Institute of Automation, CAS.</span></li>
+        <li><span class="date">2026.06</span><span class="zh">🏅 本科毕业于深圳大学，获优秀毕业生与荣誉学士学位。</span><span class="en">🏅 Graduated from Shenzhen University as an Outstanding Graduate with an Honors Degree.</span></li>
+        <li><span class="date">2026</span><span class="zh">🎉 论文 <b>AFRO</b> 被 <b>CVPR 2026</b> 接收！</span><span class="en">🎉 Our paper <b>AFRO</b> was accepted to <b>CVPR 2026</b>!</span></li>
+        <li><span class="date">2025.07</span><span class="zh">🔬 加入香港科技大学（广州）HCLab 担任研究实习生。</span><span class="en">🔬 Joined HCLab, HKUST (Guangzhou) as a research intern.</span></li>
+        <li><span class="date">2025</span><span class="zh">🎉 论文 <b>OVG-HQ</b> 被 <b>ICCV 2025</b> 接收！</span><span class="en">🎉 Our paper <b>OVG-HQ</b> was accepted to <b>ICCV 2025</b>!</span></li>
+        <li><span class="date">2023.08</span><span class="zh">🏆 获全国大学生物联网设计竞赛（华为杯）<b>全国总冠军</b>（1/1992）。</span><span class="en">🏆 <b>National Champion</b> (1/1992) of the National Undergraduate IoT Design Competition (Huawei Cup).</span></li>
+      </ul>
+    </section>
+
+    <!-- ============ PUBLICATIONS ============ -->
+    <section id="publications" class="section">
+      <h2 class="section-title reveal"><span class="idx">02</span><span class="zh">发表论文</span><span class="en">Publications</span></h2>
+      <div class="pubs">
+        <article class="pub card reveal">
+          <a class="pub-thumb has-img" href="images/afro.png" data-zoom><span class="venue-badge">CVPR 2026</span><img src="images/afro.png" alt="AFRO framework" loading="lazy" /></a>
+          <div class="pub-body">
+            <h3>Bootstrap Dynamic-Aware 3D Visual Representation for Scalable Robot Learning</h3>
+            <p class="authors">Qiwei Liang, Boyang Cai, <b>Minghao Lai</b>, Sitong Zhuang, Tao Lin, Yan Qin, Yixuan Ye, Jiaming Liang, Renjing Xu</p>
+            <p class="venue"><i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2026</i></p>
+            <p class="pub-desc zh">提出 AFRO 自监督框架，通过特征差分与逆一致性监督学习具有动力学感知能力的 3D 表征，无需动作标签或显式重建，提升机器人在仿真与真实任务中的操作成功率与扩展性。</p>
+            <p class="pub-desc en">AFRO, a self-supervised framework that learns dynamics-aware 3D representations via feature differencing and inverse-consistency supervision, without action labels or explicit reconstruction, improving manipulation success and scalability in simulation and the real world.</p>
+            <div class="pub-links"><a href="https://arxiv.org/abs/2512.00074" target="_blank" rel="noopener" class="plink">arXiv</a><a href="https://kolakivy.github.io/AFRO/" target="_blank" rel="noopener" class="plink">Project</a></div>
+          </div>
+        </article>
+        <article class="pub card reveal">
+          <a class="pub-thumb has-img" href="images/ovghq.png" data-zoom><span class="venue-badge">ICCV 2025</span><img src="images/ovghq.png" alt="OVG-HQ-Unify overview" loading="lazy" /></a>
+          <div class="pub-body">
+            <h3>OVG-HQ: Online Video Grounding with Hybrid-modal Queries</h3>
+            <p class="authors">Runhao Zeng, Jiaqi Mao, <b>Minghao Lai</b>, Minh Hieu Phan, Yanjie Dong, Wei Wang, Qi Chen, Xiping Hu</p>
+            <p class="venue"><i>IEEE/CVF International Conference on Computer Vision (<b>ICCV</b>), 2025</i></p>
+            <p class="pub-desc zh">提出在线混合模态查询视频定位新任务，支持文本、图像、视频片段及其组合的实时定位；设计统一框架 OVG-HQ-Unify（参数记忆块 + 跨模态蒸馏），并构建 QVHighlights-Unify 数据集与在线评估指标。</p>
+            <p class="pub-desc en">A new task of online video grounding with hybrid-modal queries (text, image, video clip and their combinations). We propose OVG-HQ-Unify with a Parametric Memory Block and cross-modal distillation, plus the QVHighlights-Unify dataset and online evaluation metrics.</p>
+            <div class="pub-links"><a href="https://arxiv.org/abs/2508.11903" target="_blank" rel="noopener" class="plink">arXiv</a><a href="https://github.com/maojiaqi2324/OVG-HQ" target="_blank" rel="noopener" class="plink">Code / Data</a></div>
+          </div>
+        </article>
+        <article class="pub card reveal">
+          <a class="pub-thumb has-img" href="images/iknowisee.png" data-zoom><span class="venue-badge alt">CINT 2024</span><img src="images/iknowisee.png" alt="iKnowiSee system architecture" loading="lazy" /></a>
+          <div class="pub-body">
+            <h3>iKnowiSee: AR Glasses with Language Learning Translation System and Identity Recognition System Built Based on Large Pre-trained Models of Language and Vision and Internet of Things Technology</h3>
+            <p class="authors">Qiwei Liang, Yikeng Chen, Wenbiao Li, <b>Minghao Lai</b>, Wenjian Ni, Hong Qiu</p>
+            <p class="venue"><i>China Intelligent Networked Things Conference (<b>CINT</b>), 2024 · Springer CCIS</i></p>
+            <div class="pub-links"><a href="https://doi.org/10.1007/978-981-97-3948-6_2" target="_blank" rel="noopener" class="plink">Paper</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION & EXPERIENCE ============ -->
+    <section id="education" class="section">
+      <h2 class="section-title reveal"><span class="idx">03</span><span class="zh">教育与经历</span><span class="en">Education & Experience</span></h2>
+      <div class="two-col">
+        <div>
+          <h3 class="sub-title reveal"><span class="zh">教育背景</span><span class="en">Education</span></h3>
+          <div class="timeline">
+            <div class="tl-item reveal">
+              <div class="tl-dot"></div>
+              <div class="card tl-card">
+                <span class="date">2026.09 – <span class="zh">至今</span><span class="en">Present</span></span>
+                <h4><span class="zh">中国科学院自动化研究所</span><span class="en">Institute of Automation, Chinese Academy of Sciences</span></h4>
+                <p class="muted"><span class="zh">博士研究生 · 模式识别与智能系统专业</span><span class="en">Ph.D. · Pattern Recognition and Intelligent Systems</span></p>
+                <p><span class="zh">联培单位：北京中关村学院 × 中关村人工智能研究院</span><span class="en">Joint training: Zhongguancun Academy × Zhongguancun Institute of AI</span></p>
+                <p><span class="zh">研究方向：计算机视觉、多模态、Diffusion</span><span class="en">Research: Computer Vision, Multimodal, Diffusion</span></p>
+              </div>
+            </div>
+            <div class="tl-item reveal">
+              <div class="tl-dot"></div>
+              <div class="card tl-card">
+                <span class="date">2022.09 – 2026.06</span>
+                <h4><span class="zh">深圳大学</span><span class="en">Shenzhen University</span></h4>
+                <p class="muted"><span class="zh">工学学士 · 机电与控制工程学院 · 自动化</span><span class="en">B.Eng. in Automation · College of Mechatronics and Control Engineering</span></p>
+                <p><span class="zh">优秀毕业生 · 荣誉学士学位</span><span class="en">Outstanding Graduate · Honors Degree</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="sub-title reveal"><span class="zh">研究与访问经历</span><span class="en">Research & Visiting</span></h3>
+          <div class="timeline">
+            <div class="tl-item reveal">
+              <div class="tl-dot"></div>
+              <div class="card tl-card">
+                <span class="date">2025.07 – 2026.03</span>
+                <h4><span class="zh">香港科技大学（广州）HCLab</span><span class="en">HCLab, HKUST (Guangzhou)</span></h4>
+                <p class="muted"><span class="zh">研究实习生</span><span class="en">Research Intern</span></p>
+              </div>
+            </div>
+            <div class="tl-item reveal">
+              <div class="tl-dot"></div>
+              <div class="card tl-card">
+                <span class="date">2024.08 – 2025.06</span>
+                <h4><span class="zh">深圳北理莫斯科大学人工智能研究院</span><span class="en">AI Institute, Shenzhen MSU-BIT University</span></h4>
+                <p class="muted"><span class="zh">研究实习生</span><span class="en">Research Intern</span></p>
+              </div>
+            </div>
+            <div class="tl-item reveal">
+              <div class="tl-dot"></div>
+              <div class="card tl-card">
+                <span class="date">2023.08 – 2024.10</span>
+                <h4><span class="zh">深圳大学媒体信息内容安全实验室</span><span class="en">Media Information Content Security Lab, SZU</span></h4>
+                <p class="muted"><span class="zh">研究实习生</span><span class="en">Research Intern</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HONORS ============ -->
+    <section id="honors" class="section">
+      <h2 class="section-title reveal"><span class="idx">04</span><span class="zh">荣誉奖项</span><span class="en">Honors & Awards</span></h2>
+      <div class="two-col">
+        <div>
+          <h3 class="sub-title reveal"><span class="zh">竞赛获奖</span><span class="en">Competitions</span></h3>
+          <ul class="award-list">
+            <li class="card award reveal highlight">
+              <span class="medal">🏆</span>
+              <div><b><span class="zh">全国大学生物联网设计竞赛（华为杯）全国总决赛 — 一等奖兼全国总冠军</span><span class="en">National Undergraduate IoT Design Competition (Huawei Cup), National Finals — First Prize &amp; Overall Champion</span></b><span class="muted">1/1992 · 2023.08</span></div>
+            </li>
+            <li class="card award reveal">
+              <span class="medal">🥇</span>
+              <div><b><span class="zh">深圳大学“荔园挑战”创新创业大赛 学术赛道 — 一等奖</span><span class="en">SZU "Liyuan Challenge" Innovation &amp; Entrepreneurship Competition, Academic Track — First Prize</span></b><span class="muted">2025.12</span></div>
+            </li>
+            <li class="card award reveal">
+              <span class="medal">🥇</span>
+              <div><b><span class="zh">全国大学生物联网设计竞赛 全国总决赛 — 一等奖</span><span class="en">National Undergraduate IoT Design Competition, National Finals — First Prize</span></b><span class="muted">2025.08</span></div>
+            </li>
+            <li class="card award reveal">
+              <span class="medal">🥈</span>
+              <div><b><span class="zh">全国大学生嵌入式芯片与系统设计竞赛 芯片应用赛道南部赛区 — 二等奖</span><span class="en">National Embedded Chip &amp; System Design Competition, Chip Application Track, Southern Region — Second Prize</span></b><span class="muted">2024.07</span></div>
+            </li>
+            <li class="card award reveal">
+              <span class="medal">🎖️</span>
+              <div><b><span class="zh">美国大学生数学建模竞赛（MCM/ICM）— S 奖</span><span class="en">Mathematical Contest in Modeling (MCM/ICM) — Successful Participant</span></b><span class="muted">2024</span></div>
+            </li>
+            <li class="card award reveal">
+              <span class="medal">🥉</span>
+              <div><b><span class="zh">深圳大学“荔园挑战”创新创业大赛 创业赛道 — 铜奖</span><span class="en">SZU "Liyuan Challenge" Innovation &amp; Entrepreneurship Competition, Startup Track — Bronze Award</span></b><span class="muted">2023.12</span></div>
+            </li>
+            <li class="card award reveal">
+              <span class="medal">🥇</span>
+              <div><b><span class="zh">iCAN 大学生创新创业大赛华南赛区决赛 — 一等奖</span><span class="en">iCAN Innovation &amp; Entrepreneurship Competition, South China Finals — First Prize</span></b><span class="muted">2023.10</span></div>
+            </li>
+            <li class="card award reveal">
+              <span class="medal">🥇</span>
+              <div><b><span class="zh">蓝桥杯全国软件和信息技术专业人才大赛全国总决赛 单片机组 — 一等奖</span><span class="en">Lanqiao Cup National Finals, MCU Track — First Prize</span></b><span class="muted">2023.06</span></div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="sub-title reveal"><span class="zh">奖学金</span><span class="en">Scholarships</span></h3>
+          <ul class="award-list">
+            <li class="card award reveal highlight">
+              <span class="medal">⭐</span>
+              <div><b><span class="zh">国家励志奖学金</span><span class="en">National Encouragement Scholarship</span></b><span class="muted">2025.12</span></div>
+            </li>
+            <li class="card award reveal">
+              <span class="medal">⭐</span>
+              <div><b><span class="zh">阳光华艺助学金</span><span class="en">Sunshine Huayi Grant</span></b><span class="muted">2026.03</span></div>
+            </li>
+            <li class="card award reveal">
+              <span class="medal">⭐</span>
+              <div><b><span class="zh">荔园之星</span><span class="en">Liyuan Star Award</span></b><span class="muted">2025.01</span></div>
+            </li>
+            <li class="card award reveal">
+              <span class="medal">⭐</span>
+              <div><b><span class="zh">鹏程奖学金</span><span class="en">Pengcheng Scholarship</span></b><span class="muted">2025.01</span></div>
+            </li>
+            <li class="card award reveal">
+              <span class="medal">⭐</span>
+              <div><b><span class="zh">学习之星 一等奖</span><span class="en">Academic Star, First Prize</span></b><span class="muted">2025.01</span></div>
+            </li>
+            <li class="card award reveal">
+              <span class="medal">⭐</span>
+              <div><b><span class="zh">双创之星（团体）一等奖</span><span class="en">Innovation &amp; Entrepreneurship Star (Team), First Prize</span></b><span class="muted">2025.01</span></div>
+            </li>
+            <li class="card award reveal">
+              <span class="medal">⭐</span>
+              <div><b><span class="zh">华为奖学金</span><span class="en">Huawei Scholarship</span></b><span class="muted">2023.12</span></div>
+            </li>
+            <li class="card award reveal">
+              <span class="medal">⭐</span>
+              <div><b><span class="zh">双创之星（个人）一等奖</span><span class="en">Innovation &amp; Entrepreneurship Star (Individual), First Prize</span></b><span class="muted">2023.12</span></div>
+            </li>
+            <li class="card award reveal">
+              <span class="medal">⭐</span>
+              <div><b><span class="zh">双创之星（团体）一等奖</span><span class="en">Innovation &amp; Entrepreneurship Star (Team), First Prize</span></b><span class="muted">2023.12</span></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS / CONTACT ============ -->
+    <section id="contact" class="section">
+      <div class="card contact reveal">
+        <h2><span class="zh">欢迎交流与合作</span><span class="en">Let's Connect</span></h2>
+        <p class="muted"><span class="zh">对计算机视觉、多模态大模型、Diffusion 或机器人学习感兴趣？欢迎邮件联系我。</span><span class="en">Interested in computer vision, multimodal models, diffusion or robot learning? Feel free to reach out.</span></p>
+        <div class="hero-btns center">
+          <a class="btn btn-primary" href="mailto:minghaolai77@gmail.com">minghaolai77@gmail.com</a>
+          <a class="btn btn-ghost" href="cv.html"><span class="zh">查看简历</span><span class="en">View CV</span></a>
+          <a class="btn btn-ghost" href="https://scholar.google.com.hk/citations?user=FhDBnOwAAAAJ&hl=zh-CN" target="_blank" rel="noopener">Google Scholar ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year">2026</span> Minghao Lai · <span class="zh">最后更新</span><span class="en">Last updated</span>: 2026.11</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox"><img alt="" /></div>
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
